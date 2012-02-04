@@ -93,7 +93,7 @@
 	
 	<div class="field">
 		Who will commit the most turnovers?<br />
-		Patriots: <%= f.radio_button :moreTurnovers, true %><br />
+		Patriots (+0.5): <%= f.radio_button :moreTurnovers, true %><br />
 		Giants: <%= f.radio_button :moreTurnovers, false %><br />
 		Bet: <%= f.select :moreTurnoversBet, (1..20).to_a %>
 	</div>
@@ -114,7 +114,7 @@
 	
 	<div class="field">
 		Which team will punt more times?<br />
-		Patriots: <%= f.radio_button :morePunts, true %><br />
+		Patriots (+0.5): <%= f.radio_button :morePunts, true %><br />
 		Giants: <%= f.radio_button :morePunts, false %><br />
 		Bet: <%= f.select :morePuntsBet, (1..20).to_a %>
 	</div>
@@ -122,14 +122,14 @@
 	<div class="field">
 		Which team will convert the most first downs?<br />
 		Patriots: <%= f.radio_button :moreFirstDowns, true %><br />
-		Giants: <%= f.radio_button :moreFirstDowns, false %><br />
+		Giants (+0.5): <%= f.radio_button :moreFirstDowns, false %><br />
 		Bet: <%= f.select :moreFirstDownsBet, (1..20).to_a %>
 	</div>
 	
 	<div class="field">
 		Which value will be higher?<br />
 		Receptions for Hakeem Nicks: <%= f.radio_button :hakeemNicksReceptionsOverGoalsInFlyersRangers, true %><br />
-		Total goals scored in Sunday's Flyers/Rangers game: <%= f.radio_button :hakeemNicksReceptionsOverGoalsInFlyersRangers, false %><br />
+		Total goals scored in Sunday's Flyers/Rangers game (+0.5): <%= f.radio_button :hakeemNicksReceptionsOverGoalsInFlyersRangers, false %><br />
 		Bet: <%= f.select :hakeemNicksReceptionsOverGoalsInFlyersRangersBet, (1..20).to_a %>
 	</div>
 	
@@ -150,7 +150,7 @@
 	<div class="field">
 		Which value will be higher?<br />
 		Receptions for Wes Welker: <%= f.radio_button :welkerReceptionsOverLebronAssists, true %><br />
-	    Number of assists for Lebron James in Sunday's Heat/Raptors game: <%= f.radio_button :welkerReceptionsOverLebronAssists, false %><br />
+	    Number of assists for Lebron James in Sunday's Heat/Raptors game (+0.5): <%= f.radio_button :welkerReceptionsOverLebronAssists, false %><br />
 		Bet: <%= f.select :welkerReceptionsOverLebronAssistsBet, (1..20).to_a %>
 	</div>
 	
