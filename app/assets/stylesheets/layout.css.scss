@@ -13,11 +13,16 @@ body {
 
 header {
   padding-top: 20px;
+  font-family: 'Helvetica', 'Arial', sans-serif;
 
   img {
     padding: 1em;
     background: white;
   }
+}
+
+div.field {
+	font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
 section {
@@ -29,6 +34,14 @@ section {
   h1 {
     font-size: 200%;
   }
+}
+
+button {
+	font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+h1 {
+	font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
 /* Links */
