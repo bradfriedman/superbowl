@@ -29,9 +29,9 @@
 	</div>
 	
 	<div class="field">
-		Will David Tyree's catch in the 2008 Super Bowl be shown:<br />
-		2 or fewer times: <%= f.radio_button :tyreeShownOver, true %><br />
-		3 or more times: <%= f.radio_button :tyreeShownOver, false %><br />
+		Between the opening kickoff and the final whistle (excluding halftime), will David Tyree's famous catch in the 2008 Super Bowl be shown:<br />
+		1 or 0 times: <%= f.radio_button :tyreeShownOver, true %><br />
+		2 or more times: <%= f.radio_button :tyreeShownOver, false %><br />
 		Bet: <%= f.select :tyreeShownOverBet, (1..20).to_a %>
 	</div>
 	
