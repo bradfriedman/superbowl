@@ -8,9 +8,9 @@ Superbowl::Application.routes.draw do
   resources :users
   resources :results
   
-  root to: '/scoreboard'
-  
   match '/scoreboard', to: 'static_pages#scoreboard'
+  
+  root to: 'static_pages#scoreboard'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
