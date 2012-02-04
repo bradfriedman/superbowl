@@ -11,7 +11,32 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120203233920) do
+ActiveRecord::Schema.define(:version => 20120204013254) do
+
+  create_table "results", :force => true do |t|
+    t.boolean  "anthemOverResult"
+    t.boolean  "coinTossResult"
+    t.boolean  "tyreeShownOverResult"
+    t.boolean  "pointsOverResult"
+    t.boolean  "scoreFirstResult"
+    t.boolean  "scoreLastResult"
+    t.boolean  "anyScorelessQuartersResult"
+    t.boolean  "firstChallengeOverturnedResult"
+    t.boolean  "firstTouchdownYardageOverResult"
+    t.boolean  "firstTimeoutResult"
+    t.boolean  "longestTDResult"
+    t.boolean  "moreTurnoversResult"
+    t.boolean  "missedFieldGoalResult"
+    t.boolean  "bothTeamsLeadInFirstHalfResult"
+    t.boolean  "morePuntsResult"
+    t.boolean  "moreFirstDownsResult"
+    t.boolean  "hakeemNicksReceptionsOverGoalsInFlyersRangersResult"
+    t.boolean  "nicksCatchBeforeWelkerResult"
+    t.boolean  "bradyFirstTo100YardsResult"
+    t.boolean  "welkerReceptionsOverLebronAssistsResult"
+    t.datetime "created_at",                                          :null => false
+    t.datetime "updated_at",                                          :null => false
+  end
 
   create_table "users", :force => true do |t|
     t.string   "name"

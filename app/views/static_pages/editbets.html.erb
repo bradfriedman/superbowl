@@ -1,0 +1,11 @@
+<h1>Enter your email address:</h1>
+<% flash.each do |key, value| %>
+	<div class="flash"><%= value %></div>
+<% end %>
+<p>
+<%= form_tag("/static_pages/search", :method => "get") do %>
+	<%= label_tag(:q, "Email address:") %>
+	<%= text_field_tag(:q) %>
+	<%= submit_tag("Edit your bets") %>
+<% end %>
+</p>

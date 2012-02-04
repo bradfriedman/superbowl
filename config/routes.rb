@@ -1,5 +1,12 @@
 Superbowl::Application.routes.draw do
+
+  get "static_pages/editbets"
+
+  get "static_pages/scoreboard"
+  get "static_pages/search"
+
   resources :users
+  resources :results
   
   root to: 'users#new'
 
