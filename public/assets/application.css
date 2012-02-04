@@ -1,0 +1,231 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+*/
+
+/* line 6, ../../app/assets/stylesheets/layout.css.scss */
+.container {
+  width: 710px;
+}
+
+/* line 10, ../../app/assets/stylesheets/layout.css.scss */
+body {
+  background: #ccffff;
+}
+
+/* line 14, ../../app/assets/stylesheets/layout.css.scss */
+td {
+  padding: 5px;
+  text-align: center;
+}
+
+/* line 19, ../../app/assets/stylesheets/layout.css.scss */
+header {
+  padding-top: 20px;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+/* line 23, ../../app/assets/stylesheets/layout.css.scss */
+header img {
+  padding: 1em;
+  background: white;
+}
+
+/* line 29, ../../app/assets/stylesheets/layout.css.scss */
+div.field {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+/* line 33, ../../app/assets/stylesheets/layout.css.scss */
+section {
+  margin-top: 1em;
+  font-size: 120%;
+  padding: 20px;
+  background: white;
+}
+/* line 39, ../../app/assets/stylesheets/layout.css.scss */
+section h1 {
+  font-size: 200%;
+}
+
+/* line 44, ../../app/assets/stylesheets/layout.css.scss */
+button {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+/* line 48, ../../app/assets/stylesheets/layout.css.scss */
+h1 {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+/* Links */
+/* line 54, ../../app/assets/stylesheets/layout.css.scss */
+a {
+  color: #0099cc;
+  text-decoration: none;
+}
+/* line 58, ../../app/assets/stylesheets/layout.css.scss */
+a:hover {
+  color: #006699;
+  text-decoration: underline;
+}
+/* line 63, ../../app/assets/stylesheets/layout.css.scss */
+a:visited {
+  color: #006699;
+}
+
+/* Navigation */
+/* line 70, ../../app/assets/stylesheets/layout.css.scss */
+nav {
+  float: right;
+  background-color: white;
+  padding: 0 0.7em;
+  white-space: nowrap;
+}
+/* line 76, ../../app/assets/stylesheets/layout.css.scss */
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 80, ../../app/assets/stylesheets/layout.css.scss */
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0.2em 0;
+}
+/* line 85, ../../app/assets/stylesheets/layout.css.scss */
+nav ul li a {
+  padding: 0 5px;
+  font-weight: bold;
+}
+/* line 89, ../../app/assets/stylesheets/layout.css.scss */
+nav ul li a:visited {
+  color: #0099cc;
+}
+/* line 93, ../../app/assets/stylesheets/layout.css.scss */
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Sign up button */
+/* line 103, ../../app/assets/stylesheets/layout.css.scss */
+a.signup_button {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  width: 190px;
+  color: white;
+  background: #006400;
+  font-size: 150%;
+  font-weight: bold;
+  padding: 20px;
+}
+
+/* Round corners */
+/* line 118, ../../app/assets/stylesheets/layout.css.scss */
+.round {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* line 124, ../../app/assets/stylesheets/layout.css.scss */
+footer {
+  text-align: center;
+  margin-top: 10px;
+  width: 710px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 131, ../../app/assets/stylesheets/layout.css.scss */
+footer nav {
+  float: none;
+}
+/* line 1, ../../app/assets/stylesheets/scaffolds.css.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 8, ../../app/assets/stylesheets/scaffolds.css.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 13, ../../app/assets/stylesheets/scaffolds.css.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 18, ../../app/assets/stylesheets/scaffolds.css.scss */
+a {
+  color: #000;
+}
+/* line 20, ../../app/assets/stylesheets/scaffolds.css.scss */
+a:visited {
+  color: #666;
+}
+/* line 22, ../../app/assets/stylesheets/scaffolds.css.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 27, ../../app/assets/stylesheets/scaffolds.css.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 30, ../../app/assets/stylesheets/scaffolds.css.scss */
+#notice {
+  color: green;
+}
+
+/* line 33, ../../app/assets/stylesheets/scaffolds.css.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 38, ../../app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 45, ../../app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 54, ../../app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
