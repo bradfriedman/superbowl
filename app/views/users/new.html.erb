@@ -1,5 +1,7 @@
 <%= provide(:title, 'Orangesox 2012 Prop Bet Entry Form')%>
-<h1>Good luck!</h1>
+<h1>Place your bets</h1>
+<h3>Each bet amount must be unique (1-20)</h3>
+<h5>Good luck!</h5>
 
 <%= form_for(@user) do |f| %>
 	<%= f.error_messages %>
@@ -156,4 +158,3 @@
 		<%= f.submit "Register bets" %>
 	</div>
 <% end %>
-<%= link_to 'Back', users_path %>
