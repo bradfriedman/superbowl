@@ -1,3 +1,26 @@
+<%= flash[:success] %>
+
 <h1>Scoreboard</h1>
 
+<table>
+	<tr>
+		<td></td>
+		<td>Player</td>
+		<td>Points</td>
+		<td>Possible Additional Points</td>
+	</tr>
 
+	<% unless @results.nil? %>
+		<% n = 1 %>
+		<% @players.each do |p| %>
+			<tr>
+				<td><%= n %>.</td>
+				<td><%= p.name %></td>
+			    <td><%= @scores[p.id] %></td>
+			    <td><%= @possiblescores[p.id] %></td>
+			</tr>
+			<% n = n + 1 %>
+		<% end %>
+	<% end %>
+
+</table>

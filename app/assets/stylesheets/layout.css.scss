@@ -11,6 +11,11 @@ body {
   background: $background-color;
 }
 
+td {
+	padding: 5px;
+	text-align: center;
+}
+
 header {
   padding-top: 20px;
   font-family: 'Helvetica', 'Arial', sans-serif;
