@@ -73,7 +73,9 @@ class UniqueBetsValidator < ActiveModel::Validator
            record.welkerReceptionsOverLebronAssistsBet
            
     unless total == 210      
-      record.errors[:base] << "Please enter a different bet amount for each proposition."
+      a = Array.new
+      a << record.anthemMinutesBet << record.coinTossBet << record.tyreeShownOverBet << record.pointsOverBet << record.scoreFirstBet << record.scoreLastBet << record.anyScorelessQuartersBet << record.firstChallengeOverturnedBet << record.firstTouchdownYardageOverBet << record.firstTimeoutBet << record.longestTDBet << record.moreTurnoversBet << record.missedFieldGoalBet << record.bothTeamsLeadInFirstHalfBet << record.morePuntsBet << record.moreFirstDownsBet << record.hakeemNicksReceptionsOverGoalsInFlyersRangersBet << record.nicksCatchBeforeWelkerBet << record.bradyFirstTo100YardsBet << record.welkerReceptionsOverLebronAssistsBet
+      record.errors[:base] << "Please enter a different bet amount for each proposition. Bets you have already used are: " << a.uniq.sort
     end
   end
 end
