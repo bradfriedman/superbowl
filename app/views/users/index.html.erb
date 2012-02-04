@@ -1,0 +1,103 @@
+<h1>Listing users</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Anthemover</th>
+    <th>Cointoss</th>
+    <th>Tyreeshownover</th>
+    <th>Pointsover</th>
+    <th>Scorefirst</th>
+    <th>Anyscorelessquarters</th>
+    <th>Firstchallengeoverturned</th>
+    <th>Scorelast</th>
+    <th>Firsttouchdownyardageover</th>
+    <th>Firsttimeout</th>
+    <th>Longesttd</th>
+    <th>Moreturnovers</th>
+    <th>Missedfieldgoal</th>
+    <th>Bothteamsleadinfirsthalf</th>
+    <th>Morepunts</th>
+    <th>Morefirstdowns</th>
+    <th>Hakeemnicksreceptionsovergoalsinflyersrangers</th>
+    <th>Nickscatchbeforewelker</th>
+    <th>Bradyfirstto100yards</th>
+    <th>Welkerreceptionsoverlebronassists</th>
+    <th>Anthemminutesbet</th>
+    <th>Cointossbet</th>
+    <th>Tyreeshownoverbet</th>
+    <th>Pointsoverbet</th>
+    <th>Scorefirstbet</th>
+    <th>Anyscorelessquartersbet</th>
+    <th>Firstchallengeoverturnedbet</th>
+    <th>Scorelast</th>
+    <th>Firsttouchdownyardageoverbet</th>
+    <th>Firsttimeoutbet</th>
+    <th>Longesttdbet</th>
+    <th>Moreturnoversbet</th>
+    <th>Missedfieldgoalbet</th>
+    <th>Bothteamsleadinfirsthalfbet</th>
+    <th>Morepuntsbet</th>
+    <th>Morefirstdownsbet</th>
+    <th>Hakeemnicksreceptionsovergoalsinflyersrangersbet</th>
+    <th>Nickscatchbeforewelkerbet</th>
+    <th>Bradyfirstto100yardsbet</th>
+    <th>Welkerreceptionsoverlebronassistsbet</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @users.each do |user| %>
+  <tr>
+    <td><%= user.name %></td>
+    <td><%= user.anthemOver %></td>
+    <td><%= user.coinToss %></td>
+    <td><%= user.tyreeShownOver %></td>
+    <td><%= user.pointsOver %></td>
+    <td><%= user.scoreFirst %></td>
+    <td><%= user.anyScorelessQuarters %></td>
+    <td><%= user.firstChallengeOverturned %></td>
+    <td><%= user.scoreLast %></td>
+    <td><%= user.firstTouchdownYardageOver %></td>
+    <td><%= user.firstTimeout %></td>
+    <td><%= user.longestTD %></td>
+    <td><%= user.moreTurnovers %></td>
+    <td><%= user.missedFieldGoal %></td>
+    <td><%= user.bothTeamsLeadInFirstHalf %></td>
+    <td><%= user.morePunts %></td>
+    <td><%= user.moreFirstDowns %></td>
+    <td><%= user.hakeemNicksReceptionsOverGoalsInFlyersRangers %></td>
+    <td><%= user.nicksCatchBeforeWelker %></td>
+    <td><%= user.bradyFirstTo100Yards %></td>
+    <td><%= user.welkerReceptionsOverLebronAssists %></td>
+    <td><%= user.anthemMinutesBet %></td>
+    <td><%= user.coinTossBet %></td>
+    <td><%= user.tyreeShownOverBet %></td>
+    <td><%= user.pointsOverBet %></td>
+    <td><%= user.scoreFirstBet %></td>
+    <td><%= user.anyScorelessQuartersBet %></td>
+    <td><%= user.firstChallengeOverturnedBet %></td>
+    <td><%= user.scoreLast %></td>
+    <td><%= user.firstTouchdownYardageOverBet %></td>
+    <td><%= user.firstTimeoutBet %></td>
+    <td><%= user.longestTDBet %></td>
+    <td><%= user.moreTurnoversBet %></td>
+    <td><%= user.missedFieldGoalBet %></td>
+    <td><%= user.bothTeamsLeadInFirstHalfBet %></td>
+    <td><%= user.morePuntsBet %></td>
+    <td><%= user.moreFirstDownsBet %></td>
+    <td><%= user.hakeemNicksReceptionsOverGoalsInFlyersRangersBet %></td>
+    <td><%= user.nicksCatchBeforeWelkerBet %></td>
+    <td><%= user.bradyFirstTo100YardsBet %></td>
+    <td><%= user.welkerReceptionsOverLebronAssistsBet %></td>
+    <td><%= link_to 'Show', user %></td>
+    <td><%= link_to 'Edit', edit_user_path(user) %></td>
+    <td><%= link_to 'Destroy', user, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New User', new_user_path %>
