@@ -8,7 +8,7 @@ Superbowl::Application.routes.draw do
   resources :users
   resources :results
   
-  root to: 'users#new'
+  root to: '/scoreboard'
   
   match '/scoreboard', to: 'static_pages#scoreboard'
 
