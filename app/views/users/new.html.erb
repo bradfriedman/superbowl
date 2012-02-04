@@ -64,9 +64,9 @@
 	</div>
 	
 	<div class="field">
-		Will the first coach's challenge be successful?<br />
-		Yes: <%= f.radio_button :firstChallengeOverturned, true %><br />
-		No: <%= f.radio_button :firstChallengeOverturned, false %><br />
+		Who will win the game with the spread (Patriots -3.5)?<br />
+		Patriots: <%= f.radio_button :firstChallengeOverturned, true %><br />
+		Giants: <%= f.radio_button :firstChallengeOverturned, false %><br />
 		Bet: <%= f.select :firstChallengeOverturnedBet, (1..20).to_a %>
 	</div>
 	
