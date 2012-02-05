@@ -12,6 +12,7 @@
 
 	<% unless @results.nil? %>
 		<% n = 1 %>
+		<% @players.sort! { |a,b| @scores[a.id] <=> @scores[b.id] }%>
 		<% @players.each do |p| %>
 			<tr>
 				<td><%= n %>.</td>
