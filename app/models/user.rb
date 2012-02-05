@@ -49,7 +49,15 @@
 #  email                                            :string(255)
 #
 
+module Enumerable
+  def dups
+      inject({}) {|h,v| h[v]=h[v].to_i+1; h}.reject{|k,v| v==1}.keys
+  end
+end
+
 class UniqueBetsValidator < ActiveModel::Validator
+
+  
   def validate(record)
     total = record.anthemMinutesBet +
            record.coinTossBet + 
@@ -75,7 +83,7 @@ class UniqueBetsValidator < ActiveModel::Validator
     unless total == 210      
       a = Array.new
       a << record.anthemMinutesBet << record.coinTossBet << record.tyreeShownOverBet << record.pointsOverBet << record.scoreFirstBet << record.scoreLastBet << record.anyScorelessQuartersBet << record.firstChallengeOverturnedBet << record.firstTouchdownYardageOverBet << record.firstTimeoutBet << record.longestTDBet << record.moreTurnoversBet << record.missedFieldGoalBet << record.bothTeamsLeadInFirstHalfBet << record.morePuntsBet << record.moreFirstDownsBet << record.hakeemNicksReceptionsOverGoalsInFlyersRangersBet << record.nicksCatchBeforeWelkerBet << record.bradyFirstTo100YardsBet << record.welkerReceptionsOverLebronAssistsBet
-      record.errors[:base] << "Please enter a different bet amount for each proposition. Bets you have already used are: " << a.uniq.sort
+      record.errors[:base] << "Please enter a different bet amount for each proposition. Bets you have duplicates of: " + a.dups.sort.inspect.to_s
     end
   end
 end
