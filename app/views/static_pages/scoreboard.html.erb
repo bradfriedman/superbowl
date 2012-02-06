@@ -8,6 +8,7 @@
 		<td>Player</td>
 		<td>Points</td>
 		<td>Possible Additional Points</td>
+		<td>Points + Potential</td>
 	</tr>
 
 	<% unless @results.nil? %>
@@ -19,6 +20,7 @@
 				<td><%= p.name %></td>
 			    <td><%= @scores[p.id] %></td>
 			    <td><%= @possiblescores[p.id] %></td>
+				<td><%= @scores[p.id] + @possiblescores[p.id] %>
 			</tr>
 			<% n = n + 1 %>
 		<% end %>
