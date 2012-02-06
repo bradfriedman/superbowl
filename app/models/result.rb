@@ -28,5 +28,5 @@
 #
 
 class Result < ActiveRecord::Base
-  attr_accessible :anthemOverResult, :coinTossResult, :tyreeShownOverResult, :pointsOverResult, :scoreFirstResult, :scoreLastResult, :anyScorelessQuarterResult, :firstChallengeOverturnedResult, :firstTouchdownYardageOverResult, :firstTimeoutResult, :longestTDResults, :moreTurnoversResult, :missedFieldGoalResult, :bothTeamsLeadInFirstHalfResult, :morePuntsResult, :moreFirstDownsResult, :hakeemNicksReceptionsOverGoalsInFlyersRangersResult, :nicksCatchBeforeWelkerResult, :bradyFirstTo100YardsResult, :welkerReceptionsOverLebronAssistsResult 
+  attr_accessible :anthemOverResult, :coinTossResult, :tyreeShownOverResult, :pointsOverResult, :scoreFirstResult, :scoreLastResult, :anyScorelessQuartersResult, :firstChallengeOverturnedResult, :firstTouchdownYardageOverResult, :firstTimeoutResult, :longestTDResult, :moreTurnoversResult, :missedFieldGoalResult, :bothTeamsLeadInFirstHalfResult, :morePuntsResult, :moreFirstDownsResult, :hakeemNicksReceptionsOverGoalsInFlyersRangersResult, :nicksCatchBeforeWelkerResult, :bradyFirstTo100YardsResult, :welkerReceptionsOverLebronAssistsResult 
 end
