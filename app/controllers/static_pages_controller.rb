@@ -208,7 +208,7 @@ class StaticPagesController < ApplicationController
       
       if @results.hakeemNicksReceptionsOverGoalsInFlyersRangersResult != nil
         @players.each do |p|
-          if @results.hakeemNicksReceptionsOverGoalsInFlyersRangersResult == p.hakeemNicksReceptionsOverGoalsInFlyersRangersResult
+          if @results.hakeemNicksReceptionsOverGoalsInFlyersRangersResult == p.hakeemNicksReceptionsOverGoalsInFlyersRangers
             @scores[p.id] = @scores[p.id] + p.hakeemNicksReceptionsOverGoalsInFlyersRangersBet
           end
         end
