@@ -161,7 +161,7 @@ class StaticPagesController < ApplicationController
       if @results.missedFieldGoalResult != nil
         @players.each do |p|
           if @results.missedFieldGoalResult == p.missedFieldGoal
-            @scores[p.id] = @scores[p.id] + p.missedFieldGoal
+            @scores[p.id] = @scores[p.id] + p.missedFieldGoalBet
           end
         end
       else
