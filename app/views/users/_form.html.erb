@@ -19,6 +19,10 @@
     <%= f.label :anthemOver %><br />
     <%= f.check_box :anthemOver %>
   </div>
+    <div class="field">
+    <%= f.label :harbowl %><br />
+    <%= f.check_box :harbowl %>
+  </div>
   <div class="field">
     <%= f.label :coinToss %><br />
     <%= f.check_box :coinToss %>
@@ -40,8 +44,8 @@
     <%= f.check_box :anyScorelessQuarters %>
   </div>
   <div class="field">
-    <%= f.label :firstChallengeOverturned %><br />
-    <%= f.check_box :firstChallengeOverturned %>
+    <%= f.label :spread %><br />
+    <%= f.check_box :spread %>
   </div>
   <div class="field">
     <%= f.label :scoreLast %><br />
@@ -80,32 +84,28 @@
     <%= f.check_box :moreFirstDowns %>
   </div>
   <div class="field">
-    <%= f.label :hakeemNicksReceptionsOverGoalsInFlyersRangers %><br />
-    <%= f.check_box :hakeemNicksReceptionsOverGoalsInFlyersRangers %>
+    <%= f.label :mossVersusBryant %><br />
+    <%= f.check_box :mossVersusBryant %>
   </div>
   <div class="field">
     <%= f.label :nicksCatchBeforeWelker %><br />
     <%= f.check_box :nicksCatchBeforeWelker %>
   </div>
   <div class="field">
-    <%= f.label :bradyFirstTo100Yards %><br />
-    <%= f.check_box :bradyFirstTo100Yards %>
-  </div>
-  <div class="field">
-    <%= f.label :welkerReceptionsOverLebronAssists %><br />
-    <%= f.check_box :welkerReceptionsOverLebronAssists %>
+    <%= f.label :firstTo100Yards %><br />
+    <%= f.check_box :firstTo100Yards %>
   </div>
   <div class="field">
     <%= f.label :anthemMinutesBet %><br />
     <%= f.number_field :anthemMinutesBet %>
   </div>
+    <div class="field">
+    <%= f.label :harbowlBet %><br />
+    <%= f.number_field :harbowlBet %>
+  </div>
   <div class="field">
     <%= f.label :coinTossBet %><br />
     <%= f.number_field :coinTossBet %>
-  </div>
-  <div class="field">
-    <%= f.label :tyreeShownOverBet %><br />
-    <%= f.number_field :tyreeShownOverBet %>
   </div>
   <div class="field">
     <%= f.label :pointsOverBet %><br />
@@ -120,12 +120,12 @@
     <%= f.number_field :anyScorelessQuartersBet %>
   </div>
   <div class="field">
-    <%= f.label :firstChallengeOverturnedBet %><br />
-    <%= f.number_field :firstChallengeOverturnedBet %>
+    <%= f.label :spreadBet %><br />
+    <%= f.number_field :spreadBet %>
   </div>
   <div class="field">
-    <%= f.label :scoreLast %><br />
-    <%= f.number_field :scoreLast %>
+    <%= f.label :scoreLastBet %><br />
+    <%= f.number_field :scoreLastBet %>
   </div>
   <div class="field">
     <%= f.label :firstTouchdownYardageOverBet %><br />
@@ -160,20 +160,16 @@
     <%= f.number_field :moreFirstDownsBet %>
   </div>
   <div class="field">
-    <%= f.label :hakeemNicksReceptionsOverGoalsInFlyersRangersBet %><br />
-    <%= f.number_field :hakeemNicksReceptionsOverGoalsInFlyersRangersBet %>
+    <%= f.label :mossVersusBryantBet %><br />
+    <%= f.number_field :mossVersusBryantBet %>
   </div>
   <div class="field">
-    <%= f.label :nicksCatchBeforeWelkerBet %><br />
-    <%= f.number_field :nicksCatchBeforeWelkerBet %>
+    <%= f.label :firstCatchBet %><br />
+    <%= f.number_field :firstCatchBet %>
   </div>
   <div class="field">
-    <%= f.label :bradyFirstTo100YardsBet %><br />
-    <%= f.number_field :bradyFirstTo100YardsBet %>
-  </div>
-  <div class="field">
-    <%= f.label :welkerReceptionsOverLebronAssistsBet %><br />
-    <%= f.number_field :welkerReceptionsOverLebronAssistsBet %>
+    <%= f.label :firstTo100YardsBet %><br />
+    <%= f.number_field :bfirstTo100YardsBet %>
   </div>
   <div class="actions">
     <%= f.submit %>

@@ -3,39 +3,39 @@
 <%= form_for(@result) do |f| %>
 	<%= f.error_messages %>
 <div class="field">
-	Will the national anthem be shorter than 1 minute, 35 seconds?<br />
+	Will the national anthem be shorter than 2 minutes, 10 seconds?<br />
 	Yes: <%= f.radio_button :anthemOverResult, true %><br />
 	No: <%= f.radio_button :anthemOverResult, false %><br />
 </div>
 
 <div class="field">
+	How many times will someone on the broadcast refer to this game as "HarBowl" or the "Harbaugh Bowl"? (between opening kickoff and final whistle, not counting commercials or halftime)<br />
+	2 or fewer: <%= f.radio_button :harbowlResult, true %><br />
+	3 or more: <%= f.radio_button :harbowlResult, false %><br />
+</div>
+
+<div class="field">
 	Who will win the coin toss?<br />
-	Patriots: <%= f.radio_button :coinTossResult, true %><br />
-	Giants: <%= f.radio_button :coinTossResult, false %><br />
+	49ers: <%= f.radio_button :coinTossResult, true %><br />
+	Ravens: <%= f.radio_button :coinTossResult, false %><br />
 </div>
 
 <div class="field">
-	Will David Tyree's catch in the 2008 Super Bowl be shown:<br />
-	2 or fewer times: <%= f.radio_button :tyreeShownOverResult, true %><br />
-	3 or more times: <%= f.radio_button :tyreeShownOverResult, false %><br />
-</div>
-
-<div class="field">
-	Will the total points scored be over or under 54.5?<br />
+	Will the total points scored be over or under 48.5?<br />
 	Over: <%= f.radio_button :pointsOverResult, true %><br />
 	Under: <%= f.radio_button :pointsOverResult, false %><br />
 </div>
 
 <div class="field">
 	Who will score first?<br />
-	Patriots: <%= f.radio_button :scoreFirstResult, true %><br />
-	Giants: <%= f.radio_button :scoreFirstResult, false %><br />
+	49ers: <%= f.radio_button :scoreFirstResult, true %><br />
+	Ravens: <%= f.radio_button :scoreFirstResult, false %><br />
 </div>
 
 <div class="field">
 	Who will score last?<br />
-	Patriots: <%= f.radio_button :scoreLastResult, true %><br />
-	Giants: <%= f.radio_button :scoreLastResult, false %><br />
+	49ers: <%= f.radio_button :scoreLastResult, true %><br />
+	Ravens: <%= f.radio_button :scoreLastResult, false %><br />
 </div>
 
 <div class="field">
@@ -45,9 +45,9 @@
 </div>
 
 <div class="field">
-	Who will win with the spread (Patriots -3.5)?<br />
-	Yes: <%= f.radio_button :firstChallengeOverturnedResult, true %><br />
-	No: <%= f.radio_button :firstChallengeOverturnedResult, false %><br />
+	Who will win with the spread (49ers -4.5)?<br />
+	Yes: <%= f.radio_button :spreadResult, true %><br />
+	No: <%= f.radio_button :spreadResult, false %><br />
 </div>
 
 <div class="field">
@@ -64,14 +64,14 @@
 
 <div class="field">
 	Who will take the first timeout?<br />
-	Patriots: <%= f.radio_button :firstTimeoutResult, true %><br />
-	Giants: <%= f.radio_button :firstTimeoutResult, false %><br />
+	49ers: <%= f.radio_button :firstTimeoutResult, true %><br />
+	Ravens: <%= f.radio_button :firstTimeoutResult, false %><br />
 </div>
 
 <div class="field">
 	Who will commit the most turnovers?<br />
-	Patriots: <%= f.radio_button :moreTurnoversResult, true %><br />
-	Giants: <%= f.radio_button :moreTurnoversResult, false %><br />
+	49ers: <%= f.radio_button :moreTurnoversResult, true %><br />
+	Ravens: <%= f.radio_button :moreTurnoversResult, false %><br />
 </div>
 
 <div class="field">
@@ -88,38 +88,32 @@
 
 <div class="field">
 	Which team will punt more times?<br />
-	Patriots: <%= f.radio_button :morePuntsResult, true %><br />
-	Giants: <%= f.radio_button :morePuntsResult, false %><br />
+	49ers: <%= f.radio_button :morePuntsResult, true %><br />
+	Ravens: <%= f.radio_button :morePuntsResult, false %><br />
 </div>
 
 <div class="field">
 	Which team will convert the most first downs?<br />
-	Patriots: <%= f.radio_button :moreFirstDownsResult, true %><br />
-	Giants: <%= f.radio_button :moreFirstDownsResult, false %><br />
+	49ers: <%= f.radio_button :moreFirstDownsResult, true %><br />
+	Ravens: <%= f.radio_button :moreFirstDownsResult, false %><br />
 </div>
 
 <div class="field">
 	Which value will be higher?<br />
-	Receptions for Hakeem Nicks: <%= f.radio_button :hakeemNicksReceptionsOverGoalsInFlyersRangersResult, true %><br />
-	Total goals scored in Sunday's Flyers/Rangers game: <%= f.radio_button :hakeemNicksReceptionsOverGoalsInFlyersRangersResult, false %><br />
+	Number of yards gained by Randy Moss - 7: <%= f.radio_button :mossVersusBryantResult, true %><br />
+	Number of points Kobe Bryant scores against Detroit tonight: <%= f.radio_button :mossVersusBryantResult, false %><br />
 </div>
 
 <div class="field">
 	Who will catch a pass first?<br />
-	Hakeem Nicks: <%= f.radio_button :nicksCatchBeforeWelkerResult, true %><br />
-	Wes Welker: <%= f.radio_button :nicksCatchBeforeWelkerResult, false %><br />
+	Michael Crabtree: <%= f.radio_button :firstCatchResult, true %><br />
+	Anquan Boldin: <%= f.radio_button :firstCatchResult, false %><br />
 </div>
 
 <div class="field">
 	Which quarterback will be first to reach 100 passing yards?<br />
-	Tom Brady: <%= f.radio_button :bradyFirstTo100YardsResult, true %><br />
-	Eli Manning: <%= f.radio_button :bradyFirstTo100YardsResult, false %><br />
-</div>
-
-<div class="field">
-	Which value will be higher?<br />
-	Receptions for Wes Welker: <%= f.radio_button :welkerReceptionsOverLebronAssistsResult, true %><br />
-    Number of assists for Lebron James in Sunday's Heat/Raptors game: <%= f.radio_button :welkerReceptionsOverLebronAssistsResult, false %><br />
+	Kaepernick: <%= f.radio_button :firstTo100YardsResult, true %><br />
+	Flacco: <%= f.radio_button :firstTo100YardsResult, false %><br />
 </div>
 
 <div class="actions">
